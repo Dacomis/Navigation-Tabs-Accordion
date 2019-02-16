@@ -1,0 +1,111 @@
+/* Tabs */
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkslategray;
+  }
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  ul li {
+    display: inline-flex;
+  }
+  ul li a {
+    text-decoration: none;
+    color: darkslategray;
+    padding-top: 10px;
+    border-bottom: 1px solid transparent;
+    font-size: 150%;
+    font-weight: bold;
+    
+  }
+  ul li a:hover {
+    color: rgb(79, 79, 129);
+  }
+  .nav .active a {
+    color: rgb(81, 81, 128);
+    border-bottom: 1px solid rgb(163, 156, 209);
+    background-color: rgb(240, 239, 245);
+    
+  }
+  .nav .active a:hover {
+    border-color: transparent;
+    background: rgb(212, 212, 235);
+    color: white;
+  }
+  .tab-pane {
+    display: none;
+    padding-bottom: 1%;
+  }
+  .tab-pane.active {
+    display: block;
+    margin-left: 2%;
+    font-size: 120%;
+  }
+
+  .tab-content {
+    background-color: rgb(240, 239, 245);
+  }
+  
+  h4 {
+    margin-top: 0%;    
+  }
+
+
+/* Accordion */
+
+.accordion-toggle {
+    display: block;
+    font-size: 110%;
+    cursor: pointer;
+    background-color: rgb(240, 239, 245);
+    border: 1px;
+    border-color: blueviolet;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    padding: 1%;
+    outline-style: solid;
+    outline-color: rgb(49, 73, 119);
+    outline-width: thin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(34, 58, 58);
+  }
+  
+  .accordion-content {
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkslategray;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 90%;
+  }
+  
+  a:link {
+    text-decoration: none;
+    
+  }
+
+  .accordion-content.active {
+    display: block;
+  }
+
+  .accordion-toggle:hover{
+    background-color: rgb(212, 212, 235);
+}
+
