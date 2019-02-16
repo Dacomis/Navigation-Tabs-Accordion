@@ -1,4 +1,4 @@
-//tabs
+//tab-uri
 
 function onTabClick(event) {
     let activeTabs = document.querySelectorAll('.active');
@@ -16,26 +16,16 @@ function onTabClick(event) {
   element.addEventListener('click', onTabClick, false);
 
 
-// accordion
+//accordeon
 
-document.addEventListener('click', function (event) {
-  
-  if (!event.target.classList.contains('accordion-toggle')) return;
-  
-  var content = document.querySelector(event.target.hash);
-  if (!content) return;
-  
-  event.preventDefault();
-  
-  if (content.classList.contains('active')) {
-    content.classList.remove('active');
-    return;
-  }
-  
-  var accordions = document.querySelectorAll('.accordion-content.active');
-  for (var i = 0; i < accordions.length; i++) {
-    accordions[i].classList.remove('active');
-  }
-  
-  content.classList.toggle('active');
-})
+$(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function() {
+    
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      console.log("test")
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    })
+});
